@@ -1,0 +1,77 @@
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.dropdown-select {
+  padding: 8px;
+  font-size: 14px;
+  width: 100px;
+  border: 1px solid #2e2e2e; 
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.dropdown-select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.repo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.repo-box {
+  width: 600px;
+  border: 1px solid #2e2e2e;
+  padding: 20px;
+  margin: 10px; /* Adjust margin as needed */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.repo-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.repo-description {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.repo-stars {
+  font-weight: bold;
+  color: #ff0400;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #2e2e2e;
+  color: white;
+  border-color: #2e2e2e;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover,
+.pagination button.current-page {
+  background-color: #fff;
+  color: #000;
+}
